@@ -1,0 +1,33 @@
+#C_Sharp tutorial
+
+important concepts
+
+string firstFriend = "Maria";
+string secondFriend = "Sage";
+Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
+
+string greeting = "      Hello World!       ";
+string trimmedGreeting = greeting.TrimStart();				//TrimStart()
+trimmedGreeting = greeting.TrimEnd();						//TrimEnd()
+trimmedGreeting = greeting.Trim();							//Trim()
+
+string sayHello = "Hello World!";
+sayHello = sayHello.Replace("Hello", "Greetings");			//Replace()
+
+Console.WriteLine(sayHello.ToUpper());						//ToUpper()
+Console.WriteLine(sayHello.ToLower());						//ToLower()
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.Contains("goodbye"));			//Contains()	return True or False
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.StartsWith("You"));			//StartWith()	return True or False
+Console.WriteLine(songLyrics.EndsWith("goodbye"));			//EndsWith()	return True or False
+
+decimal min = decimal.MinValue;								//MinValue
+decimal max = decimal.MaxValue;								//Maxvalue
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+
+double radius = 2.50;
+double area = Math.PI * radius * radius;					//Math.PI		
+Console.WriteLine(area);
