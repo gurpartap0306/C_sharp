@@ -31,3 +31,16 @@ Console.WriteLine($"The range of the decimal type is {min} to {max}");
 double radius = 2.50;
 double area = Math.PI * radius * radius;					//Math.PI		
 Console.WriteLine(area);
+
+// conditions and loops are similar like java and c++
+
+//list in c_sharp
+var names = new List<string> { "<name>", "Ana", "Felipe" };	//create new list
+names.Add("Maria");											//add new data to list
+names.Remove("Ana");										//remove data from list
+var index = names.IndexOf("Felipe");						//IndexOf returns return of element if present in list els erturn -1
+Console.WriteLine($"The list has {names.Count} people in it");	//use Count to find length of list
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
